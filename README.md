@@ -175,7 +175,12 @@ Cette page sera le second onglet de votre application.
 
 Il vous faudra un champ de recherche pour chercher un film par titre. (il existe un composant ion-searchbar, que vous pouvez utiliser)
 
+### Attention /!\
 Pour afficher une image, il faut utiliser cette url : `https://image.tmdb.org/t/p/w500/` + `chemin de l'image`(backdrop_path ou poster_path)
+
+Par exemple, pour Terminator, le poster_path est `/RtFOHF93zW4kTp4JOYrH71vxBh.jpg`
+
+Donc le chemin d'accès a l'image est : `https://image.tmdb.org/t/p/w500/mRtFOHF93zW4kTp4JOYrH71vxBh.jpg`
 
 Affichez au minimum le titre et l'image du film.
 
