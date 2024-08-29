@@ -9,9 +9,10 @@ La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
 La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
 
--   `http://movies-api.julienpoirier-webdev.com/api/movies` pour les films
--   `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
--   `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
+-       `http://movies-api.julienpoirier-webdev.com/search/movies/:query`
+-       `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
+-       `http://movies-api.julienpoirier-webdev.com/search/series/:query` pour les series
+-        `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
 
@@ -137,7 +138,7 @@ Bonus :
 -   Ajouter un bouton pour revenir à la liste des pokemons.
 -   Ajouter des boutons pour naviguer entre les pokemons (précédent et suivant).
 
-## Etape BONUS
+## Etape BONUS
 
 Utiliser le plugin capacitor "cookie" ou "storage" pour sauvegarder les pokemons favoris de l'utilisateur. Vous pouvez ajouter un bouton "Ajouter aux favoris" sur la page de détails d'un pokemon et un onglet "Favoris" dans le menu de votre application.
 
@@ -161,9 +162,10 @@ const removeFavorite = (id) => {
 
 ## Etape 4
 
-Mettre a jour les tabs de votre application pour qu'ils aient des icônes et des noms plus explicites : 
--  Le premier onglet devra s'appeler "Pokemons" et avoir l'icône que vous trouvez la mieux adaptée.
--  Le second onglet devra s'appeler "Films" et avoir l'icône d'une caméra.
+Mettre a jour les tabs de votre application pour qu'ils aient des icônes et des noms plus explicites :
+
+-   Le premier onglet devra s'appeler "Pokemons" et avoir l'icône que vous trouvez la mieux adaptée.
+-   Le second onglet devra s'appeler "Films" et avoir l'icône d'une caméra.
 
 ## Etape 5
 
