@@ -2,8 +2,14 @@
 
 Cette évaluation se compose d'une app Ionic composé de plusieurs pages et consommant deux api disctinctes. Il n'y a pas de cohérence entre les deux parties de l'app, il s'agit simplement d'un exercice de mise en pratique.
 
-La première api est `https://tyradex.vercel.app/`, une API sur POKEMON : - `https://tyradex.vercel.app/api/v1/pokemon` pour la liste des pokemons - `https://tyradex.vercel.app/api/v1/pokemon/:id` pour un pokemon en particulier
-La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series : - `http://movies-api.julienpoirier-webdev.com/api/movies` pour les films - `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier - `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
+La première api est `https://tyradex.vercel.app/`, une API sur POKEMON : 
+- `https://tyradex.vercel.app/api/v1/pokemon` pour la liste des pokemons
+- `https://tyradex.vercel.app/api/v1/pokemon/:id` pour un pokemon en particulier
+
+La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series : 
+- `http://movies-api.julienpoirier-webdev.com/api/movies` pour les films
+- `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
+- `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
 
