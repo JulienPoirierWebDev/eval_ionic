@@ -9,11 +9,10 @@ La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
 La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
 
-- 	http://movies-api.julienpoirier-webdev.com/search/movies/:query
--   	http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
--   	http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
-- 	http://movies-api.julienpoirier-webdev.com/infos/series/:id pour une serie en particulier
-
+- 	`http://movies-api.julienpoirier-webdev.com/search/movies/:query`
+-   	`http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
+-   	`http://movies-api.julienpoirier-webdev.com/search/series/:query` pour les series
+-   	 `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
 
@@ -163,7 +162,13 @@ const removeFavorite = (id) => {
 
 ## Etape 4
 
-Créer une page qui affiche la liste des films. Vous devrez consommer l'api `http://movies-api.julienpoirier-webdev.com/api/movies` pour afficher les films. Vous pouvez afficher les films sous forme de liste ou de carte, c'est vous qui voyez.
+Mettre a jour les tabs de votre application pour qu'ils aient des icônes et des noms plus explicites : 
+-  Le premier onglet devra s'appeler "Pokemons" et avoir l'icône que vous trouvez la mieux adaptée.
+-  Le second onglet devra s'appeler "Films" et avoir l'icône d'une caméra.
+
+## Etape 5
+
+Créer une page qui affiche la liste des films. Vous devrez consommer l'api `http://movies-api.julienpoirier-webdev.com/search/movies/:query` pour afficher les films. Vous pouvez afficher les films sous forme de liste ou de carte, c'est vous qui voyez.
 
 Cette page sera le second onglet de votre application.
 
