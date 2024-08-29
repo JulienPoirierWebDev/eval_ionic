@@ -137,7 +137,7 @@ Bonus :
 -   Ajouter un bouton pour revenir à la liste des pokemons.
 -   Ajouter des boutons pour naviguer entre les pokemons (précédent et suivant).
 
-## Etape BONUS
+## Etape BONUS
 
 Utiliser le plugin capacitor "cookie" ou "storage" pour sauvegarder les pokemons favoris de l'utilisateur. Vous pouvez ajouter un bouton "Ajouter aux favoris" sur la page de détails d'un pokemon et un onglet "Favoris" dans le menu de votre application.
 
