@@ -2,14 +2,16 @@
 
 Cette évaluation se compose d'une app Ionic composé de plusieurs pages et consommant deux api disctinctes. Il n'y a pas de cohérence entre les deux parties de l'app, il s'agit simplement d'un exercice de mise en pratique.
 
-La première api est `https://tyradex.vercel.app/`, une API sur POKEMON : 
-- `https://tyradex.vercel.app/api/v1/pokemon` pour la liste des pokemons
-- `https://tyradex.vercel.app/api/v1/pokemon/:id` pour un pokemon en particulier
+La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
-La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series : 
-- `http://movies-api.julienpoirier-webdev.com/api/movies` pour les films
-- `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
-- `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
+-   `https://tyradex.vercel.app/api/v1/pokemon` pour la liste des pokemons
+-   `https://tyradex.vercel.app/api/v1/pokemon/:id` pour un pokemon en particulier
+
+La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
+
+-   `http://movies-api.julienpoirier-webdev.com/api/movies` pour les films
+-   `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
+-   `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
 
@@ -123,6 +125,7 @@ Bonus :
 
 -   Ajouter un selecteur de type.
 -   Ajouter un champ de recherche pour filtrer les pokemons par nom.
+-   Utiliser une grid pour afficher les pokemons (et n'avoir que 2 ou 3 colonnes par exemple).
 
 ## Etape 3
 
@@ -134,6 +137,28 @@ Bonus :
 -   Ajouter un bouton pour revenir à la liste des pokemons.
 -   Ajouter des boutons pour naviguer entre les pokemons (précédent et suivant).
 
+## Etape BONUS
+
+Utiliser le plugin capacitor "cookie" ou "storage" pour sauvegarder les pokemons favoris de l'utilisateur. Vous pouvez ajouter un bouton "Ajouter aux favoris" sur la page de détails d'un pokemon et un onglet "Favoris" dans le menu de votre application.
+
+TIPS :
+
+-   Vous pouvez sauvegarder les favoris sous forme de tableau d'id de pokemons.
+
+```jsx
+const [favoris, setFavoris] = useState([]);
+
+const addFavorite = (id) => {
+	setFavoris([...favoris, id]);
+};
+
+const removeFavorite = (id) => {
+	setFavoris(favoris.filter((fav) => fav !== id));
+};
+```
+
+-   Dans l'onglet "Favoris", il faudra charger a nouveau tous les pokemons pour afficher les favoris. Il faudra alors vérifier si l'id du pokemon est dans le tableau des favoris pour l'afficher.
+
 ## Etape 4
 
 Créer une page qui affiche la liste des films. Vous devrez consommer l'api `http://movies-api.julienpoirier-webdev.com/api/movies` pour afficher les films. Vous pouvez afficher les films sous forme de liste ou de carte, c'est vous qui voyez.
@@ -143,4 +168,5 @@ Cette page sera le second onglet de votre application.
 Affichez au minimum le titre et l'image du film.
 
 Bonus : - Ajouter les 100 premiers characters du synopsis
+
 # eval_ionic
