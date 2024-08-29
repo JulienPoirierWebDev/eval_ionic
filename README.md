@@ -9,9 +9,9 @@ La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
 La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
 
--         `http://movies-api.julienpoirier-webdev.com/search/movies/:query`
--         http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
--         http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series
+-                       `http://movies-api.julienpoirier-webdev.com/search/movies/:query`
+-                       http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
+-                       http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series
     -   `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
@@ -173,8 +173,62 @@ Créer une page qui affiche la liste des films. Vous devrez consommer l'api `htt
 
 Cette page sera le second onglet de votre application.
 
+Il vous faudra un champ de recherche pour chercher un film par titre. (il existe un composant ion-searchbar, que vous pouvez utiliser)
+
+Pour afficher une image, il faut utiliser cette url : `https://image.tmdb.org/t/p/w500/` + `chemin de l'image`(backdrop_path ou poster_path)
+
 Affichez au minimum le titre et l'image du film.
+
+Idéalement, vous devriez afficher :
+
+-   Le titre du film
+-   L'image du film
+-   La date de sortie du film
+-   Un morceau du synopsis du film
 
 Bonus : - Ajouter les 100 premiers characters du synopsis
 
-# eval_ionic
+## Etape 6
+
+Créer une page qui affiche les détails d'un film. Vous devrez consommer l'api `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour afficher les détails du film. Vous pouvez afficher les détails sous forme de liste ou de carte, c'est vous qui voyez.
+
+Vous pouvez afficher :
+
+-   Le titre du film
+-   L'image du film
+-   La date de sortie du film
+-   Le synopsis du film
+-   La durée du film
+-   Les genres du film
+-   Le nom original du film
+-   Le nom des pays de production
+-   Les langues parlées dans le film
+-   La tagline du film
+-   Le budget du film
+-   S'il appartient a une collection et le nom de la collection
+
+Bonus :
+
+-   Il y a une image backrop_path qui est plus grande que l'image poster_path, vous pouvez l'afficher en fond de votre page de détails, faites un truc joli.
+-   Ajouter un bouton pour revenir à la liste des films.
+-   Afficher les genres
+
+## Etape 7
+
+Si le film appartient a une collection, vous pouvez afficher les autres films de la collection. Pour cela, vous pouvez consommer l'api `http://movies-api.julienpoirier-webdev.com/infos/collections/:id`.
+Vous pouvez afficher les films de la collection sous forme de liste ou de carte, c'est vous qui voyez.
+
+Bonus :
+
+-   On peut cliquer sur un film de la collection pour afficher les détails du film et ainsi avoir une navigation infinie.
+
+## Etape 8
+
+Permettre la pagination sur la liste des films. Vous pouvez consommer l'api `http://movies-api.julienpoirier-webdev.com/search/movies/:query/:page` pour afficher les films. Vous pouvez afficher les films sous forme de liste ou de carte, c'est vous qui voyez.
+
+Il faudrait ajouter un bouton "Suivant" et "Précédent" pour naviguer entre les pages.
+
+Bonus :
+
+-   Aller a la dernière page
+-   Aller a la première page
