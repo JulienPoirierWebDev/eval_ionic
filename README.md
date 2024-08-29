@@ -13,7 +13,7 @@ La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur le
 -   `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
 -   `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
-## Workflow
+## Workflow
 
 Vous allez travailler a 2 ou 3, il faut donc être organisé. Celui qui a créer le projet doit donner les autorisations aux autres pour qu'ils puissent eux aussi écrire dessus.
 
