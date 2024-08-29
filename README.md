@@ -9,9 +9,11 @@ La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
 La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
 
--   `http://movies-api.julienpoirier-webdev.com/api/movies/:search pour les films
--   `http://movies-api.julienpoirier-webdev.com/infos/movies/:id` pour un film en particulier
--   `http://movies-api.julienpoirier-webdev.com/api/series` pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
+- 	http://movies-api.julienpoirier-webdev.com/search/movies/:query
+-   	http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
+-   	http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series - `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
+- 	http://movies-api.julienpoirier-webdev.com/infos/series/:id pour une serie en particulier
+
 
 ## Workflow
 
