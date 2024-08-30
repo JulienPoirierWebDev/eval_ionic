@@ -9,9 +9,9 @@ La première api est `https://tyradex.vercel.app/`, une API sur POKEMON :
 
 La seconde api est `http://movies-api.julienpoirier-webdev.com/`, une API sur les films et les series :
 
--                       `http://movies-api.julienpoirier-webdev.com/search/movies/:query`
--                       http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
--                       http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series
+-                         `http://movies-api.julienpoirier-webdev.com/search/movies/:query`
+-                         http://movies-api.julienpoirier-webdev.com/infos/movies/:id pour un film en particulier
+-                         http://movies-api.julienpoirier-webdev.com/search/series/:query pour les series
     -   `http://movies-api.julienpoirier-webdev.com/infos/series/:id` pour une serie en particulier
 
 ## Workflow
@@ -31,7 +31,7 @@ Créer un repository github et sauvegarder votre travail dessus.
 
 ## Etape 2
 
-Créer une page qui affiche la liste des pokemons. Vous devrez consommer l'api `https://tyradex.vercel.app/pokemon` pour afficher les pokemons. Vous pouvez afficher les pokemons sous forme de liste ou de carte, c'est vous qui voyez.
+Créer une page qui affiche la liste des pokemons. Vous devrez consommer l'api `https://tyradex.vercel.app/api/v1/pokemon` pour afficher les pokemons. Vous pouvez afficher les pokemons sous forme de liste ou de carte, c'est vous qui voyez.
 
 Cette page sera le premier onglet de votre application.
 
@@ -176,6 +176,7 @@ Cette page sera le second onglet de votre application.
 Il vous faudra un champ de recherche pour chercher un film par titre. (il existe un composant ion-searchbar, que vous pouvez utiliser)
 
 ### Attention /!\
+
 Pour afficher une image, il faut utiliser cette url : `https://image.tmdb.org/t/p/w500/` + `chemin de l'image`(backdrop_path ou poster_path)
 
 Par exemple, pour Terminator, le poster_path est `/RtFOHF93zW4kTp4JOYrH71vxBh.jpg`
